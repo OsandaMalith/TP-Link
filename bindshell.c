@@ -6,11 +6,11 @@
 #include <netinet/in.h>
 
 #define SERVER_PORT	9999
-/ * CC-BY: Osanda Malith Jayathissa (@OsandaMalith)
+ /* CC-BY: Osanda Malith Jayathissa (@OsandaMalith)
   * Bind Shell using Fork for my TP-Link mr3020 router running busybox
   * Arch : MIPS
   * mips-linux-gnu-gcc mybindshell.c -o mybindshell -static -EB -march=24kc
-  * /
+  */
 int main() {
 	int serverfd, clientfd, server_pid, i = 0;
 	char *banner = "[~] Welcome to @OsandaMalith's Bind Shell\n";
